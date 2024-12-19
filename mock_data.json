@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Pump1",
+    "name": "Pump 123",
+    "type": "Centrifugal",
+    "state": "Active",
+    "flow": "high",
+    "weight": "70"
+  },
+  {
+    "id": "Pump2",
+    "name": "Pump ABC",
+    "type": "Axial",
+    "state": "Design",
+    "flow": "low",
+    "weight": "30"
+  },
+  {
+    "id": "Pump1734345981883",
+    "name": "ST147 Pump",
+    "type": "Piston",
+    "state": "Design",
+    "flow": "normal",
+    "weight": "60"
+  }
+]

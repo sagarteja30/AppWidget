@@ -1,0 +1,198 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);  /* Modern gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #3449a1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);  /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);  /* Hover effect */
+}
+
+/* Form container */
+#form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #3449a1;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.6);
+}
+
+/* Table container */
+table {
+    width: 80%; /* Medium width */
+    border-collapse: collapse;
+    margin: 20px auto; /* Center table with margin */
+    max-width: 900px; /* Limit table width */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header */
+table th {
+    background-color: #3449a1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Table rows */
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Hover effect for table rows */
+table tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+/* Flow column colors */
+td[style*="background-color"] {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.flow-low {
+    background-color: #27ae60; /* Green for LOW */
+}
+
+.flow-normal {
+    background-color: #ffff33; /* Yellow for NORMAL */
+}
+
+.flow-high {
+    background-color: #e74c3c; /* Red for HIGH */
+}
+
+/* Button styling */
+button {
+    padding: 8px 15px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3449a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.action-btn {
+    margin: 5px;
+}
+
+button.delete-btn {
+    background-color: #ff4040;
+}
+
+button.delete-btn:hover {
+    background-color: #ff1e1e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        width: 95%; /* Make table fill most of the screen on small devices */
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    body {
+        padding: 20px; /* Add spacing on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    table th, table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
